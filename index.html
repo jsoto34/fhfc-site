@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fountain Hill Fire Company – Station 34</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fountain Hill Fire Company – Station 34. Protecting Fountain Hill, PA through volunteer fire and rescue service." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <span>Emergency: <strong>Dial 911</strong></span>
+    <span>Station 34 • Fountain Hill, PA</span>
+  </div>
+
+  <header class="site-header">
+    <div class="logo-area">
+      <img src="assets/img/logo.jpg" alt="Fountain Hill Fire Company Logo" class="site-logo">
+      <div class="logo-text">
+        <h1>Fountain Hill Fire Company</h1>
+        <p>Station 34</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="apparatus.html">Apparatus</a>
+      <a href="events.html">Events</a>
+      <a href="membership.html">Membership</a>
+      <a href="operations.html">Runs &amp; Training</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="themeToggle" class="theme-toggle" type="button">🌓</button>
+  </header>
+
+  <!-- Hero slider with overlay text -->
+  <section class="hero-slider">
+    <div class="slide slide-1"></div>
+    <div class="slide slide-2"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Serving Fountain Hill with Pride</h2>
+      <p>Volunteer-operated, community-driven. Providing fire suppression, rescue response, and emergency services for the Borough of Fountain Hill.</p>
+      <div class="hero-actions">
+        <a href="membership.html" class="btn btn-primary">Become a Member</a>
+        <a href="donate.html" class="btn btn-secondary">Support the Company</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alert-banner">
+    <p><strong>Latest News:</strong> Visit our <a href="events.html">Events page</a> for Tree Sales and Santa Run information.</p>
+  </section>
+
+  <main class="content-wrapper">
+
+    <section class="grid-3">
+      <article class="card">
+        <h3>About Fountain Hill Fire Co.</h3>
+        <p>Located at 950 Cherokee Street, the Fountain Hill Fire Company responds to emergencies 24/7 with trained volunteer firefighters and a commitment to public safety.</p>
+        <a href="about.html" class="card-link">Learn more &rarr;</a>
+      </article>
+
+      <article class="card">
+        <h3>Apparatus Fleet</h3>
+        <p>Our fire suppression, rescue and aerial response capabilities operate through Quint 34 and Engine 34.</p>
+        <a href="apparatus.html" class="card-link">View units &rarr;</a>
+      </article>
+
+      <article class="card">
+        <h3>Join Our Ranks</h3>
+        <p>No experience necessary. Must be 18+. Training every Monday from 6PM–10PM.</p>
+        <a href="membership.html" class="card-link">Membership info &rarr;</a>
+      </article>
+    </section>
+
+    <section class="highlight">
+      <div class="highlight-text">
+        <h2>Featured Apparatus – Quint 34</h2>
+        <p>A 2003 E-One 75' aerial unit with rescue, ventilation and medical capability — first due to most incidents in the borough.</p>
+        <ul class="highlight-list">
+          <li>75’ Ladder &amp; 110’ ground ladders</li>
+          <li>1,250 GPM Hale pump</li>
+          <li>1000’ of 5” supply</li>
+          <li>AED, stokes basket, smoke ejectors</li>
+        </ul>
+        <a href="apparatus.html" class="btn btn-outline">More details &rarr;</a>
+      </div>
+      <div class="highlight-image">
+        <img src="assets/img/quint.jpg" alt="Quint 34" class="app-img lb-img">
+      </div>
+    </section>
+
+    <section class="cta-strip">
+      <h2>Neighbors Serving Neighbors</h2>
+      <p>Support your volunteer firefighters — volunteer, donate, share our mission.</p>
+      <div class="cta-buttons">
+        <a href="donate.html" class="btn btn-primary">Donate</a>
+        <a href="contact.html" class="btn btn-secondary">Contact</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <h4>Fountain Hill Fire Company</h4>
+        <p>950 Cherokee Street<br>Fountain Hill, PA 18015</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Non-Emergency: 610-691-6069<br>Email: <a href="mailto:Contact@fountainhillfire.org">Contact@fountainhillfire.org</a></p>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <p><a href="https://www.facebook.com/FHFC34" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+    </div>
+    <p class="footer-bottom">© <span id="year"></span> Fountain Hill Fire Company • Station 34</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="assets/js/themeToggle.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+</body>
+</html>

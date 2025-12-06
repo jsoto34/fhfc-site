@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Apparatus – Fountain Hill Fire Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div class="top-bar">
+  <span>Emergency: Dial 911</span>
+  <span>Station 34 • Fountain Hill, PA</span>
+</div>
+
+<header class="site-header">
+  <div class="logo-area">
+    <img src="assets/img/logo.jpg" alt="Fountain Hill Fire Company Logo" class="site-logo">
+    <div class="logo-text">
+      <h1>Fountain Hill Fire Company</h1>
+      <p>Station 34</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="apparatus.html" class="active">Apparatus</a>
+    <a href="events.html">Events</a>
+    <a href="membership.html">Membership</a>
+    <a href="operations.html">Runs &amp; Training</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" type="button">🌓</button>
+</header>
+
+<main class="content-wrapper page">
+  <h2>Apparatus Fleet</h2>
+  <p>The following units respond out of Station 34 and serve the Borough of Fountain Hill.</p>
+
+  <div class="fleet-grid">
+    <article class="rig-card" onclick="showSpecs('quint')">
+      <img src="assets/img/quint.jpg" class="lb-img" alt="Quint 34">
+      <h3>Quint 34</h3>
+      <p>2003 E-One 75’ Side Stacker Aerial – first due truck for borough incidents.</p>
+    </article>
+
+    <article class="rig-card" onclick="showSpecs('engine')">
+      <img src="assets/img/engine.jpg" class="lb-img" alt="Engine 34">
+      <h3>Engine 34</h3>
+      <p>2021 Navistar/E-One – primary suppression engine with rescue tools.</p>
+    </article>
+  </div>
+</main>
+
+<div id="specModal" class="spec-modal">
+  <div class="spec-box" id="spec-content"></div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h4>Fountain Hill Fire Company</h4><p>950 Cherokee Street<br>Fountain Hill, PA 18015</p></div>
+    <div><h4>Contact</h4><p>Non-Emergency: 610-691-6069<br>Email: <a href="mailto:Contact@fountainhillfire.org">Contact@fountainhillfire.org</a></p></div>
+    <div><h4>Follow</h4><p><a href="https://www.facebook.com/FHFC34" target="_blank" rel="noopener">Facebook</a></p></div>
+  </div>
+  <p class="footer-bottom">© <span id="year"></span> Fountain Hill Fire Company</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  function showSpecs(unit) {
+    const specs = {
+      quint: `
+        <h2>Quint 34</h2>
+        <ul>
+          <li>2003 E-One 75' Side Stacker Aerial</li>
+          <li>Aluminum 75’ aerial ladder</li>
+          <li>110’ of ground ladders</li>
+          <li>1,250 GPM mid-mount Hale pump</li>
+          <li>1000’ of 5” supply line</li>
+          <li>2 large smoke ejectors</li>
+          <li>AED, medical equipment, stokes basket</li>
+          <li>Rope rescue rigging equipment</li>
+        </ul>
+        <p>Due to the narrow streets and building height in the borough, Quint 34 is first due for most dwelling, structure, automatic fire alarm and mutual aid fire calls.</p>
+      `,
+      engine: `
+        <h2>Engine 34</h2>
+        <ul>
+          <li>2021 Navistar/E-One</li>
+          <li>1,500 GPM Hale pump</li>
+          <li>1500’ of 5” supply line</li>
+          <li>Two 1¾” pre-connected hand lines</li>
+          <li>75’ of ground ladders</li>
+          <li>Multiple ground lighting options</li>
+          <li>Nozzles, adapters and assorted hand tools</li>
+          <li>Hydraulic rescue tools (Jaws of Life)</li>
+          <li>AED and additional medical equipment</li>
+        </ul>
+        <p>The purchase of Engine 34 was made possible with funds from a Lehigh County Community Development Block Grant and a generous donation from St. Luke’s University Health Network.</p>
+      `
+    };
+    const modal = document.getElementById("specModal");
+    const content = document.getElementById("spec-content");
+    content.innerHTML = specs[unit] || "";
+    modal.style.display = "flex";
+  }
+
+  document.getElementById("specModal").addEventListener("click", function (e) {
+    if (e.target.id === "specModal") {
+      this.style.display = "none";
+    }
+  });
+</script>
+<script src="assets/js/themeToggle.js"></script>
+<script src="assets/js/lightbox.js"></script>
+</body>
+</html>

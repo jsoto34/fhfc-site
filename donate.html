@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donate – Fountain Hill Fire Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <span>Emergency: Dial 911</span>
+  <span>Station 34 • Fountain Hill, PA</span>
+</div>
+
+<header class="site-header">
+  <div class="logo-area">
+    <img src="assets/img/logo.jpg" alt="Fountain Hill Fire Company Logo" class="site-logo">
+    <div class="logo-text">
+      <h1>Fountain Hill Fire Company</h1>
+      <p>Station 34</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="apparatus.html">Apparatus</a>
+    <a href="events.html">Events</a>
+    <a href="membership.html">Membership</a>
+    <a href="operations.html">Runs &amp; Training</a>
+    <a href="donate.html" class="active">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" type="button">🌓</button>
+</header>
+
+<main class="content-wrapper page">
+  <h2>Support Fountain Hill Fire Company</h2>
+  <p>Your donations directly support gear, training, and life-saving equipment for our volunteer firefighters.</p>
+
+  <section class="highlight-box">
+    <h3>Online Donations</h3>
+    <p>Online donation options (PayPal, Stripe, Venmo, etc.) can be integrated in the future. For now, please contact us if you’d like to arrange a donation.</p>
+    <p><a href="mailto:Contact@fountainhillfire.org" class="btn btn-primary">Email the Fire Company</a></p>
+  </section>
+
+  <section>
+    <h3>Mail-In Donations</h3>
+    <p>
+      Checks payable to:<br>
+      <strong>Fountain Hill Fire Company</strong><br>
+      950 Cherokee Street<br>
+      Fountain Hill, PA 18015
+    </p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h4>Address</h4><p>950 Cherokee Street<br>Fountain Hill, PA 18015</p></div>
+    <div><h4>Phone</h4><p>Non-Emergency: 610-691-6069</p></div>
+    <div><h4>Email</h4><p><a href="mailto:Contact@fountainhillfire.org">Contact@fountainhillfire.org</a></p></div>
+    <div><h4>Facebook</h4><p><a href="https://www.facebook.com/FHFC34" target="_blank" rel="noopener">@FHFC34</a></p></div>
+  </div>
+  <p class="footer-bottom">© <span id="year"></span> Fountain Hill Fire Company</p>
+</footer>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<script src="assets/js/themeToggle.js"></script>
+</body>
+</html>

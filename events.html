@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Events – Fountain Hill Fire Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Fountain Hill Fire Company events including Christmas Tree Sales and the annual Santa Run." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<div class="top-bar">
+  <span>Emergency: Dial 911</span>
+  <span>Station 34 • Fountain Hill, PA</span>
+</div>
+
+<header class="site-header">
+  <div class="logo-area">
+    <img src="assets/img/logo.jpg" alt="Fountain Hill Fire Company Logo" class="site-logo">
+    <div class="logo-text">
+      <h1>Fountain Hill Fire Company</h1>
+      <p>Station 34</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="apparatus.html">Apparatus</a>
+    <a href="events.html" class="active">Events</a>
+    <a href="membership.html">Membership</a>
+    <a href="operations.html">Runs &amp; Training</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" type="button">🌓</button>
+</header>
+
+<main class="content-wrapper page">
+
+  <h2>Events &amp; Fundraisers</h2>
+  <p>The Fountain Hill Fire Company hosts community events and fundraisers throughout the year to support training, equipment, and operations.</p>
+
+  <section class="event-section">
+    <h3>🎄 Christmas Tree Sales</h3>
+    <p>Christmas trees are <strong>currently on sale</strong> at the fire company.</p>
+    <ul class="simple-list">
+      <li>📍 Location: In front of the Fountain Hill Borough Pool</li>
+      <li>💲 Price: <strong>All trees are $60</strong></li>
+      <li>💰 Payment: <strong>Cash ONLY</strong></li>
+      <li>🕔 Weekday Hours: <strong>5PM–8PM</strong></li>
+      <li>🕛 Weekend Hours: <strong>12PM–8PM</strong></li>
+    </ul>
+    <p>Stop by, support your volunteer firefighters, and bring home the perfect tree for the holiday season!</p>
+  </section>
+
+  <section class="event-section">
+    <h3>🎅 Annual Santa Run</h3>
+    <p>Santa will once again be riding through the borough to visit families and deliver holiday cheer.</p>
+
+    <ul class="simple-list">
+      <li>🎁 <strong>Final Gift Drop-Off:</strong> Monday December 8th, 2025 — 5PM–8PM</li>
+      <li>📦 All gifts must be <strong>wrapped</strong> and include:</li>
+      <ul class="simple-list" style="margin-left:1.3rem;">
+        <li>Child’s name</li>
+        <li>Home address</li>
+        <li>Contact phone number</li>
+      </ul>
+      <li>📩 Santa Run Contact Email: <a href="mailto:santarun2025@fountainhillfire.org">Santarun2025@fountainhillfire.org</a></li>
+      <li>🚒 Santa Delivery Date: <strong>Saturday December 13th, 2025 beginning at noon</strong></li>
+      <li>📍 Route details will be posted a few days prior to the event.</li>
+    </ul>
+
+    <p>We look forward to another year of smiles, excitement, and holiday tradition throughout Fountain Hill.</p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h4>Fountain Hill Fire Company</h4><p>950 Cherokee Street<br>Fountain Hill, PA 18015</p></div>
+    <div><h4>Contact</h4><p>Non-Emergency: 610-691-6069<br>Email: <a href="mailto:Contact@fountainhillfire.org">Contact@fountainhillfire.org</a></p></div>
+    <div><h4>Follow</h4><p><a href="https://www.facebook.com/FHFC34" target="_blank" rel="noopener">Facebook</a></p></div>
+  </div>
+  <p class="footer-bottom">© <span id="year"></span> Fountain Hill Fire Company • Station 34</p>
+</footer>
+
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<script src="assets/js/themeToggle.js"></script>
+</body>
+</html>

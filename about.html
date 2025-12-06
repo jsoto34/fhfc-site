@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – Fountain Hill Fire Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<div class="top-bar">
+  <span>Emergency: Dial 911</span>
+  <span>Station 34 • Fountain Hill, PA</span>
+</div>
+
+<header class="site-header">
+  <div class="logo-area">
+    <img src="assets/img/logo.jpg" alt="Fountain Hill Fire Company Logo" class="site-logo">
+    <div class="logo-text">
+      <h1>Fountain Hill Fire Company</h1>
+      <p>Station 34</p>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="apparatus.html">Apparatus</a>
+    <a href="events.html">Events</a>
+    <a href="membership.html">Membership</a>
+    <a href="operations.html">Runs &amp; Training</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" type="button">🌓</button>
+</header>
+
+<main class="content-wrapper page">
+  <h2>About Fountain Hill Fire Company</h2>
+  <p>Fountain Hill Fire Company provides volunteer fire, rescue, and emergency services to residents and visitors of Fountain Hill, Pennsylvania. Our department is comprised of dedicated members who respond 24/7 to protect life and property.</p>
+
+  <section>
+    <h3>Leadership</h3>
+    <div class="grid-2">
+      <div>
+        <h4>Line Officers</h4>
+        <ul class="simple-list">
+          <li>Fire Chief – <strong>Lee Reisling</strong></li>
+          <li>Deputy Chief – <strong>VACANT</strong></li>
+          <li>Assistant Chief(s) – <strong>VACANT</strong></li>
+          <li>Captain – <strong>Jordan Soto</strong></li>
+          <li>Lieutenant – <strong>Nicholas Wechsler</strong></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Administrative Officers</h4>
+        <ul class="simple-list">
+          <li>President – <strong>Gio Matos</strong></li>
+          <li>Vice President – <strong>Jordan Soto</strong></li>
+          <li>Treasurer – <strong>Cathy Molina</strong></li>
+          <li>Secretary – <strong>Misty Kemmerer</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h4>Fountain Hill Fire Company</h4><p>950 Cherokee Street<br>Fountain Hill, PA 18015</p></div>
+    <div><h4>Contact</h4><p>Non-Emergency: 610-691-6069<br>Email: <a href="mailto:Contact@fountainhillfire.org">Contact@fountainhillfire.org</a></p></div>
+    <div><h4>Follow</h4><p><a href="https://www.facebook.com/FHFC34" target="_blank" rel="noopener">Facebook</a></p></div>
+  </div>
+  <p class="footer-bottom">© <span id="year"></span> Fountain Hill Fire Company</p>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<script src="assets/js/themeToggle.js"></script>
+</body>
+</html>
